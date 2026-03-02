@@ -10,6 +10,7 @@ class MyList
         MyList();
     
         void insertFront(int);
+        void insertBack(int);
         void print();
         void clearList();
         ~MyList();

@@ -11,5 +11,12 @@ int main() {
 
     list.print();
 
+    list.clearList();
+
+    list.insertBack(25);
+    list.insertBack(20);
+    list.insertBack(15);
+
+    list.print();
     return 0;
 }

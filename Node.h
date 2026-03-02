@@ -5,6 +5,7 @@ class Node
 public:
     //constructors
     Node() : data(0), next(nullptr){}
+    Node(int newData) : data(newData) , next(nullptr) {} 
     Node(int newData, Node* newNext) : data(newData), next(newNext) {}
     //setters
     void setData(int newData){ data = newData; }
