@@ -1,5 +1,15 @@
 #include <iostream>
+#include "MyList.cpp"
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    MyList list;
+
+    list.insertFront(20);
+    list.insertFront(15);
+    list.insertFront(10);
+    list.insertFront(5);
+
+    list.print();
+
     return 0;
 }

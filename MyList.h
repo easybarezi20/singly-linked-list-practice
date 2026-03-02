@@ -9,7 +9,7 @@ class MyList
 
         MyList();
     
-        void insertFront(int newData);
+        void insertFront(int);
         void print();
         void clearList();
         ~MyList();
