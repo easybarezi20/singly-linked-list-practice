@@ -27,5 +27,8 @@ int main() {
     list.swapValuesOfFirstAndLastNodes();
 
     list.print();
+    
+    list.searchForValue(2);
+    list.searchForValue(35);
     return 0;
 }

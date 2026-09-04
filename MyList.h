@@ -14,6 +14,7 @@ class MyList
         void print();
         void clearList();
         void swapValuesOfFirstAndLastNodes();
+        void searchForValue(int);
         ~MyList();
       
     private:

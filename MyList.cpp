@@ -72,6 +72,21 @@ void MyList::swapValuesOfFirstAndLastNodes()
     lastNode->setData(firstData);
 }
 
+void MyList::searchForValue(int value)
+{
+    Node* current = first;
+    while(current->getNext() != nullptr)
+    {
+        if(current->getData() == value)
+        {
+            cout << "Value: " << value << " has been found!" << endl;
+            return;
+        }
+        current = current->getNext();
+    }
+    cout << "Value: " << value << " was not found!" << endl;
+}
+
 MyList::~MyList()
 {
     Node *current = first;
