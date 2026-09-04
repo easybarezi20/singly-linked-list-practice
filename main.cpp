@@ -16,6 +16,15 @@ int main() {
     list.insertBack(25);
     list.insertBack(20);
     list.insertBack(15);
+    list.insertBack(35);
+    list.insertBack(27);
+    list.insertBack(10);
+    list.insertBack(5);
+    list.insertBack(100);
+
+    list.print();
+
+    list.swapValuesOfFirstAndLastNodes();
 
     list.print();
     return 0;

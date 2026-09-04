@@ -13,6 +13,7 @@ class MyList
         void insertBack(int);
         void print();
         void clearList();
+        void swapValuesOfFirstAndLastNodes();
         ~MyList();
       
     private:

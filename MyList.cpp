@@ -14,6 +14,7 @@ void MyList::insertFront(int newData)
     first = newNode;
     count++;
 }
+
 void MyList::insertBack(int newData)
 {
     Node* newNode = new Node(newData);
@@ -29,6 +30,7 @@ void MyList::insertBack(int newData)
     }
     current->setNext(newNode);
 }
+
 void MyList::print()
 {
     if(first == nullptr) cout << "List is EMPTY!" << endl;
@@ -41,6 +43,7 @@ void MyList::print()
     }
     cout << "]" << endl;
 }
+
 void MyList::clearList()
 {
     Node* current = first;
@@ -54,6 +57,21 @@ void MyList::clearList()
     first = nullptr;
     cout << "Deleting Complete." << endl;
 }
+
+void MyList::swapValuesOfFirstAndLastNodes()
+{
+    if(first == nullptr) { cout << "No items in list!" << endl; }
+    Node* lastNode = first;
+    while(lastNode->getNext() != nullptr)
+    {
+        lastNode = lastNode->getNext();
+    }
+    int firstData = first->getData();
+    int lastData = lastNode->getData();
+    first->setData(lastData);
+    lastNode->setData(firstData);
+}
+
 MyList::~MyList()
 {
     Node *current = first;
